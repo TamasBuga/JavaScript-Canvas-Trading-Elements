@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BugaCoin</title>
+  
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./Scores/score.css">
+  <link rel="stylesheet" href="./Candles/candle.css">
+  <link rel="stylesheet" href="./styles/UserInterface.css">
+  
+</head>
+
+<body onload="initScore(traders.buyers)">
+  
+  <header>
+    <nav>
+      <ul>
+        <li class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </li>
+      </ul>
+      <ul class="profile-menu">
+        <li class="menu-item">
+            <p>Profile</p>
+            <i class="icon-profile"></i>
+        </li>
+        <li class="menu-item">
+            <p>Settings</p>
+            <i class="icon-setting"></i>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+ <main>
+  
+   <div class="user-trade-data">
+     <div class="score-panel">
+        <div class="panel-main">
+            <div class="main-circle">
+                
+            </div>
+            <div class="main-score">
+                <h2 id="scoreText" ></h2>
+            </div>
+        </div>
+        <div class="scores">
+          <div class="score-row">
+             <p id="rowTitle">Cash: </p>
+             <p id="userCash"></p>
+             <p id="cashType"></p>
+          </div>
+        </div>
+    </div>
+   </div>
+   
+   <div class="dash-board" id="dashBoard">
+        <div class="candle-board" id="candleBoard">
+            <canvas id="candleCanvas" class="candle-canvas">
+
+            </canvas>
+        </div>
+    </div>
+  
+  
+      
+   
+ </main>
+ 
+  
+  
+    
+    <script src="./Candles/candle.js"></script>
+    <script src="./Scores/score.js"></script>
+
+</body>
+
+</html>
