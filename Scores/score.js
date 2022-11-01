@@ -15,12 +15,12 @@ function initScore(trades) {
     const endAngle = percentToPoints(userPercent, angle, false);
     const scoreText = document.getElementById('scoreText');
 
-    function pointsToPercent(point, maxPoints, isRound) {
-        return isRound ? Math.round(point / (maxPoints / 100)) : (point / (maxPoints / 100)).toFixed(2);
+    function pointsToPercent(point, maxPoints, isRounded) {
+        return isRounded ? Math.round(point / (maxPoints / 100)) : (point / (maxPoints / 100)).toFixed(2);
     }
 
-    function percentToPoints(percent, maxPoints, isRound) {
-        return isRound ? Math.round(percent * (maxPoints / 100)) : (percent * (maxPoints / 100)).toFixed(2);
+    function percentToPoints(percent, maxPoints, isRounded) {
+        return isRounded ? Math.round(percent * (maxPoints / 100)) : (percent * (maxPoints / 100)).toFixed(2);
     }
 
     function radianToDegree(radians) {

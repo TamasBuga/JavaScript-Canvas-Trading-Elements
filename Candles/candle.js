@@ -1,11 +1,11 @@
+const candleBoard = document.getElementById('candleBoard');
+const canvas = document.getElementById('candleCanvas');
+canvas.width = candleBoard.clientWidth;
+canvas.height = candleBoard.clientHeight;
+let canvas_VC = canvas.height / 2;
 
 function initCandle() {
-  const candleBoard = document.getElementById('candleBoard');
-  const canvas = document.getElementById('candleCanvas');
-  canvas.width = candleBoard.clientWidth;
-  canvas.height = candleBoard.clientHeight;
-  const canvas_VC = canvas.height / 2;
-
+  
   const candle = {
     x: 3,
     y: canvas_VC,
@@ -18,10 +18,10 @@ function initCandle() {
       return this.gap + this.width
     }
   }
-
+  
   let periodTimer = null;
-  let period = 5000;
   let candleTimer = null;
+  let period = 5000;
   let time = 0;
   let t = 200;
   let buyers = 0;
@@ -66,12 +66,17 @@ function initCandle() {
     context.fillRect(candle.x, candle.y, candle.width, candle.height);
   }
 
-  function createTrade(realN){
-    while(true){
+  function createTrade(realN) {
+    while (true) {
       let n = Math.floor(Math.random() * 6) * realN;
-      if(n !== 0) return n;
+      if (n !== 0) return n;
     }
   }
 
 }
+
 initCandle();
+
+window.addEventListener('resize', () => {
+
+});

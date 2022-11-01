@@ -35,33 +35,4 @@ nav ul {
   align-items: center;
 } 
 
-.scores {
-  padding: 1rem;
-}
 
-.score-row {
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255 , 0.2 );
-  border-top: 1px solid rgba(255, 255, 255 , 0.2 );
-} 
-
-.score-row p {
-  color: white;
-} 
-
-#rowTitle {
-  font-size: 1.6rem;
-  color: rgb(255, 200, 0);
-}
-
-#userCash{
-  font-size: 3rem;
-}
-
-#cashType{
-  font-size: 2rem;
-}
